@@ -11,31 +11,47 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #f0f2f5;
             margin: 0;
             color: #333;
+
+            /* Estilos para a imagem de fundo */
+            background-image: url('imagens/sitetestebia.png'); /* CAMINHO DA IMAGEM ATUALIZADO */
+            background-size: cover; /* Faz a imagem cobrir toda a área, cortando o que for necessário */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-attachment: fixed; /* Fixa a imagem de fundo enquanto a página rola */
         }
         .container {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.85); /* Fundo branco com um pouco de transparência para ver o fundo */
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
+            /* Adicione uma margem para que não fique colado nas bordas em telas pequenas */
+            margin: 20px;
+            max-width: 400px; /* Limita a largura do container para melhor visualização */
         }
         h1 {
             color: #2c3e50;
             margin-bottom: 30px;
         }
+        .logo {
+            width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+            height: auto;
+            margin-bottom: 20px;
+        }
         .link-button {
             display: block;
-            width: 250px;
+            width: 250px; /* Largura fixa para os botões */
+            max-width: 100%; /* Garante que não ultrapasse o container em telas pequenas */
             padding: 15px 20px;
-            margin: 20px auto;
+            margin: 15px auto; /* Reduz um pouco a margem entre os botões */
             text-decoration: none;
             color: #fff;
             border-radius: 5px;
             font-size: 1.1em;
             transition: background-color 0.3s ease;
+            box-sizing: border-box; /* Inclui padding e borda na largura total */
         }
         .instagram-button {
             background-color: #E1306C; /* Cor do Instagram */
@@ -53,6 +69,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="logobia.png" alt="Logo Bia Sales" class="logo">
         <h1>Acesse Nossas Redes Sociais!</h1>
         <a href="https://www.instagram.com/bs_studio01/" target="_blank" class="link-button instagram-button">
             Acessar Instagram
